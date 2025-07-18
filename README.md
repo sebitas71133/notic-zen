@@ -22,11 +22,11 @@
 
 | Crear Nota                                                         | Galería                                                              |
 | ------------------------------------------------------------------ | -------------------------------------------------------------------- |
-| ![Create](https://github.com/user-attachments/assets/1-create.jpg) | ![Gallery](https://github.com/user-attachments/assets/2-gallery.jpg) |
+| ![Create](https://github.com/user-attachments/assets/bfe2cc54-f7d2-4bf4-a815-9ba5bf9a743c) | ![Gallery](https://github.com/user-attachments/assets/2995874c-2a2b-48ab-96bc-bc6de32ff29f) |
 
-| Filtrado por etiquetas                                         | Vista móvil                                                        |
+| Subida de imagen                                               | Admin                                                     |
 | -------------------------------------------------------------- | ------------------------------------------------------------------ |
-| ![Tags](https://github.com/user-attachments/assets/3-tags.jpg) | ![Mobile](https://github.com/user-attachments/assets/4-mobile.jpg) |
+| ![Tags](https://github.com/user-attachments/assets/d8573448-fbbd-4340-878b-0db19ce23898) | ![Mobile](https://github.com/user-attachments/assets/7ac94194-d772-4c88-89ed-238f2c1eab82) |
 
 ---
 
@@ -35,8 +35,8 @@
 1. Clona el repositorio:
 
 ```bash
-git clone https://github.com/sebitas71133/zen-notes
-cd zen-notes
+git clone https://github.com/sebitas71133/notic-zen
+cd notic-zen
 ```
 
 2. Instala las dependencias:
