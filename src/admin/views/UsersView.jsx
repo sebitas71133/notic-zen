@@ -1,4 +1,3 @@
-import React from "react";
 import { useSelector } from "react-redux";
 
 import { UsersTable } from "../components/UsersTable";
@@ -11,7 +10,9 @@ export const UsersView = () => {
     <>
       {/* <NavBar></NavBar> */}
 
-      <Typography variant="h3">Asignar Roles</Typography>
+      <Typography variant="h3" sx={{ color: "text.secondary" }}>
+        Asignar Roles
+      </Typography>
       {isLoading ? <p>Cargando usuarios...</p> : <UsersTable users={users} />}
     </>
   );

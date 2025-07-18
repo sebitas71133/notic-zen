@@ -25,7 +25,7 @@ export const SideBar = ({ drawerWidth = 240, displayName, list = [] }) => {
 
   const drawerContent = (
     <>
-      <Toolbar sx={{ borderRight: 1, borderColor: "text.primary" }}>
+      <Toolbar>
         <Typography
           variant="h5"
           noWrap
@@ -36,7 +36,7 @@ export const SideBar = ({ drawerWidth = 240, displayName, list = [] }) => {
           {displayName}
         </Typography>
       </Toolbar>
-      <Divider sx={{ bgcolor: "text.primary" }} />
+      <Divider />
       <List>
         {list.map((note) => (
           <SideBarItem key={note.id} {...note} />

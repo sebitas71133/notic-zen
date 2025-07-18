@@ -1,5 +1,3 @@
-import React from "react";
-
 const TabPanel = ({ children, value, index }) => {
   return (
     <Box hidden={value !== index}>
@@ -52,8 +50,6 @@ export const CloudinaryView = () => {
   const [userImages, setUserImages] = useState([]);
 
   const [tabIndex, setTabIndex] = useState(0);
-
-  const { imagesFromCloud, globalImages } = useSelector((state) => state.users);
 
   useEffect(() => {
     // Simulate API call to get images
@@ -117,7 +113,7 @@ export const CloudinaryView = () => {
         }}
       >
         <CircularProgress />
-        <Typography variant="h6" sx={{ ml: 2 }}>
+        <Typography variant="h6" sx={{ ml: 2, color: "text.secondary" }}>
           Cargando datos de Cloudinary...
         </Typography>
       </Box>
@@ -130,7 +126,7 @@ export const CloudinaryView = () => {
         variant="h4"
         gutterBottom
         component="div"
-        sx={{ fontWeight: "bold", mb: 4 }}
+        sx={{ fontWeight: "bold", mb: 4, color: "text.secondary" }}
       >
         Dashboard de Gestión de Imágenes
       </Typography>

@@ -31,7 +31,7 @@ export const SideBarAdmin = ({ drawerWidth = 240, displayName }) => {
   const drawerContent = (
     <>
       <Toolbar>
-        <Typography variant="h6" noWrap ml={6}>
+        <Typography variant="h6" noWrap ml={6} color="text.secondary">
           {displayName ? displayName : "Admin"}
         </Typography>
       </Toolbar>
@@ -40,17 +40,20 @@ export const SideBarAdmin = ({ drawerWidth = 240, displayName }) => {
         <ListItem disablePadding>
           <ListItemButton component={Link} to="/admin">
             <ListItemIcon>
-              <PestControlOutlinedIcon sx={{ color: "primary.main" }} />
+              <PestControlOutlinedIcon sx={{ color: "text.secondary" }} />
             </ListItemIcon>
-            <ListItemText primary="Users" />
+            <ListItemText primary="Users" sx={{ color: "text.secondary" }} />
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
           <ListItemButton component={Link} to="/admin/cloudinary">
             <ListItemIcon>
-              <PestControlOutlinedIcon sx={{ color: "primary.main" }} />
+              <PestControlOutlinedIcon sx={{ color: "text.secondary" }} />
             </ListItemIcon>
-            <ListItemText primary="Cloudinary" />
+            <ListItemText
+              primary="Cloudinary"
+              sx={{ color: "text.secondary" }}
+            />
           </ListItemButton>
         </ListItem>
       </List>

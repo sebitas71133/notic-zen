@@ -9,8 +9,7 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import { Google } from "@mui/icons-material";
-import { AuthLayout } from "../layout/AuthLayout";
+
 import { useForm } from "react-hook-form";
 import {
   checkingAuthenticaction,

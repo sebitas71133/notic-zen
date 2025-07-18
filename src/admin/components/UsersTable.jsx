@@ -29,10 +29,14 @@ export const UsersTable = ({ users }) => {
         <TableHead>
           <TableRow>
             <TableCell>
-              <Typography variant="h6">Email</Typography>
+              <Typography variant="h6" sx={{ color: "text.secondary" }}>
+                Email
+              </Typography>
             </TableCell>
             <TableCell>
-              <Typography variant="h6">Rol</Typography>
+              <Typography variant="h6" sx={{ color: "text.secondary" }}>
+                Rol
+              </Typography>
             </TableCell>
           </TableRow>
         </TableHead>
@@ -40,7 +44,9 @@ export const UsersTable = ({ users }) => {
           {users.map((user) => (
             <TableRow key={user.uid}>
               <TableCell>
-                <Typography variant="body1">{user.email}</Typography>
+                <Typography sx={{ color: "text.secondary" }} variant="body1">
+                  {user.email}
+                </Typography>
               </TableCell>
               <TableCell>
                 <Controller
@@ -57,8 +63,15 @@ export const UsersTable = ({ users }) => {
                       size="small"
                       sx={{ minWidth: 120 }}
                     >
-                      <MenuItem value="usuario">Usuario</MenuItem>
-                      <MenuItem value="admin">Admin</MenuItem>
+                      <MenuItem
+                        value="usuario"
+                        sx={{ color: "text.secondary" }}
+                      >
+                        Usuario
+                      </MenuItem>
+                      <MenuItem value="admin" sx={{ color: "text.secondary" }}>
+                        Admin
+                      </MenuItem>
                     </Select>
                   )}
                 />

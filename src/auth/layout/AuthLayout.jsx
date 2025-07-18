@@ -1,7 +1,6 @@
 import { Box, Grid2, ThemeProvider } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
 import { Link, Outlet } from "react-router-dom";
-import { useSelector } from "react-redux";
 import { blueTheme } from "../../theme/blueTheme";
 
 export const AuthLayout = () => {
@@ -15,7 +14,7 @@ export const AuthLayout = () => {
         justifyContent="center"
         sx={{
           minHeight: "100vh",
-          backgroundColor: "primary.main",
+          backgroundColor: "#212121",
           padding: 4,
         }}
       >
